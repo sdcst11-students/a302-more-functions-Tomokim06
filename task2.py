@@ -10,7 +10,8 @@ r = rate of interest as a percentage
 """
 
 def compoundInterest(P,r,t,n):
-    CI = P*((1+r/n)**(n*t))
+    R = r/100
+    CI = P*(((1+R/n)**(n*t)))
     return round(CI, 2)
 
 assert compoundInterest(1000,4,2,4) == 1082.86

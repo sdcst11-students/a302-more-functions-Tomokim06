@@ -17,9 +17,9 @@ assert hypotenuse(6,8) == 10
 
 
 def hypotenuse(x,y):
-    if x - abs(x) == 0 and y - abs(y) == 0:
-        z = ((x**2)+(y**2))**0.5
-        return z
+        if x - abs(x) == 0 and y - abs(y) == 0:
+                z = ((x**2)+(y**2))**0.5
+                return round(z, 2)
 
 assert hypotenuse(6,8) == 10
 assert hypotenuse(5,12) == 13

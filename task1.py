@@ -15,9 +15,11 @@ assert btcTocad(1) == 45000
 """
 
 def btcTocad(x):
-
-    currBTC = x*45000
-    return currBTC
+    if x == float:
+        currBTC = x*45000
+        return currBTC
+    else:
+        return 'error'
 
 """
 This checks to see if you are running the program as the main script or
@@ -27,5 +29,5 @@ are not executed.
 """
 if __name__ == "__main__":
     assert btcTocad(1) == 45000
-    assert btcTocad(2.5) == 135000
-
+    assert btcTocad(2.5) == 112500
+    assert btcTocad(one) == 'error'
